@@ -10,20 +10,20 @@ type TypePostProps = {
   url?: string;
 } & TypeListProps;
 
-function New(props: React.PropsWithChildren) {
+function New({ children }: { children: React.ReactNode }) {
   return (
     <div className="wrap-item wrap-item-new">
       <span className="label">New!</span>
-      {props.children}
+      {children}
     </div>
   );
 }
 
-function Popular(props: React.PropsWithChildren) {
+function Popular({ children }: { children: React.ReactNode }) {
   return (
     <div className="wrap-item wrap-item-popular">
       <span className="label">Popular!</span>
-      {props.children}
+      {children}
     </div>
   );
 }
